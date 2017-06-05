@@ -1,6 +1,5 @@
 # A version of min_max.py that does not use the built-in min/max_no
-# functions and takes lists generated from the random_list function
-
+# functions
 import random
 
 # This is our random list function from before

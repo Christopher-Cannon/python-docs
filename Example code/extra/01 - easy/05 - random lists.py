@@ -1,6 +1,5 @@
 # A function that returns a list of random integers as long
 # as a given length
-
 import random
 
 # Generate a random list of a given length

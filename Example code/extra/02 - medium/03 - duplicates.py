@@ -1,3 +1,4 @@
+# Generate a list of random integers then remove all duplicate numbers.
 import random
 
 # Create a list of random integers of a given length
@@ -9,7 +10,7 @@ def random_list(length):
 
     return return_list
 
-# Remove duplicates from a list and return it as a set
+# Return list as a set to remove duplicate entries
 def remove_duplicates(lst):
     return set(lst)
 

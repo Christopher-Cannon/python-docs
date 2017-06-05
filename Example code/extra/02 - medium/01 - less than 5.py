@@ -1,3 +1,6 @@
+# Find all numbers less than 5 in a list and return a new list
+# containing those numbers
+
 def less_than_5(lst):
     new_lst = []
 

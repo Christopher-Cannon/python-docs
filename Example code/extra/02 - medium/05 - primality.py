@@ -11,6 +11,7 @@ def divisors(num):
 
     return divisors_list
 
+# If the number has only 2 divisors it is a prime number
 def primality(num):
     num_list = divisors(num)
 

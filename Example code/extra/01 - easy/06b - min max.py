@@ -1,3 +1,5 @@
+# A function that returns a list of the smallest and largest elements
+# from a randomly generated list
 import random
 
 # Generate a random list of a given length
@@ -9,6 +11,7 @@ def random_list(length):
 
     return return_list
 
+# Fine smallest and largest list elements
 def return_min_max(my_list):
     maximum = max(my_list)
     minimum = min(my_list)

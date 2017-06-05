@@ -1,3 +1,4 @@
+# Create maths class with various mathematical methods
 class maths:
     def __init__(self):
         self.pi = 3.14159
@@ -23,8 +24,10 @@ class maths:
         else:
             return False
 
+# Create instance of maths class
 m = maths()
 
+# Call some of the class methods
 print("18 + 83 = {}".format(m.add(18, 83)))
 
 print("Area of 16x43 rectangle: {}".format(m.r_area(16, 43)))

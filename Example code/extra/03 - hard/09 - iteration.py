@@ -1,7 +1,7 @@
 from itertools import product
 
 def pass_combos(length):
-    alpha, nums, return_list = "abcdefghijklmnopqrstuvwxyz", "1234567890", []
+    alpha, nums = "abcdefghijklmnopqrstuvwxyz", "1234567890"
 
     for x in range(length):
         combo_list = product(alpha + alpha.upper() + nums, repeat = (x + 1))

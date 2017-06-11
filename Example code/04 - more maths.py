@@ -1,19 +1,16 @@
-my_int = 18
-result = (my_int + 6) * 3
+apples = 10
+oranges = 7
+bananas = 14
 
-print("Result:", result)
+total_fruit = apples + oranges + bananas
+avg_fruit = total_fruit // 3
 
-apples = 7
-oranges = 12
-bananas = 5
+print("Total fruit:", total_fruit)
+print("Average fruit:", avg_fruit)
 
-average = int((apples + oranges + bananas) / 3)
+pears = 8
+peaches = 4
 
-print("Average fruit quantity:", average)
+calculation = apples * (oranges + bananas) ** (pears % peaches)
 
-print(3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6)
-
-hour = 60
-minutes_in_12_weeks = ((hour * 24) * 7) * 12
-
-print("Number of minutes in a 12 week period:", minutes_in_12_weeks)
+print("Calculation:", calculation)

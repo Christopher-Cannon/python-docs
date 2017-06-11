@@ -1,18 +1,14 @@
 # Function to convert decimals to hexadecimal
 
-def dec_to_hex(number):
+def dec_to_hex(num):
     hexa = "0123456789ABCDEF"
     hex_num = ""
 
-    while(number != 0):
-        # Get the remainder
-        remainder = number % 16
+    while(num != 0):
         # Determine hex digit from remainder
-        hex_num = hexa[remainder] + hex_num
+        hex_num = hexa[num % 16] + hex_num
         # Get the next number
-        number = number // 16
-        print("Number: ", number)
-        print("Remainder: ", remainder)
+        num = num // 16
 
     return hex_num
 

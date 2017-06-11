@@ -1,23 +1,16 @@
-# Don't go too high, 6-7 or higher may cause memory error
 from itertools import product
 
 def pass_combos(length):
-    alpha, return_list = "abcdefghijklmnopqrstuvwxyz1234567890", []
+    alpha, nums, return_list = "abcdefghijklmnopqrstuvwxyz", "1234567890", []
 
     for x in range(length):
-        combo_list = product(alpha, repeat = (x + 1))
+        combo_list = product(alpha + alpha.upper() + nums, repeat = (x + 1))
         for y in combo_list:
-            return_list.append(y)
+            out = ''
+            for z in y:
+                out += z
 
-    return return_list
-
-def output_list(lst):
-    for x in lst:
-        out = ""
-        for y in x:
-            out += y
-
-        print(out)
+            print(out)
 
 length = int(input("How many combinations to generate? -> "))
-output_list(pass_combos(length))
+pass_combos(length)

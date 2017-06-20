@@ -7,8 +7,8 @@ def palindromes(string):
     l_pos = -1
 
     count = 0
-
-    for x in range(math.floor(len(string) / 2)):
+    # Compare all letters except the one in the middle
+    for x in range(len(string) // 2):
         if(string[f_pos] == string[l_pos]):
             count += 1
         else:
@@ -17,7 +17,7 @@ def palindromes(string):
         f_pos += 1
         l_pos -= 1
 
-    if(count == math.floor(len(string) / 2)):
+    if(count == len(string) // 2):
         print("{} is a palindrome.".format(string))
     else:
         print("{} is not a palindrome.".format(string))

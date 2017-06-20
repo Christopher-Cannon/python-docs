@@ -1,4 +1,6 @@
 # Sort a list from smallest to largest value
+# Count +1 every time we don't need to swap values
+# If we can get through with swapping the list is sorted
 
 def order_list(lst):
     while(True):

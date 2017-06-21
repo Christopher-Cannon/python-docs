@@ -8,6 +8,8 @@ myString = "python"
 myBoolean = True
 
 myInt += 2
+newString = "Hello" + " " + "world"
+print("{} + {} = {}".format(myInt, myFloat, myInt + myFloat))
 
 # Mathematics
 print(8 + 2 * 3)
@@ -30,23 +32,25 @@ print(not(myBoolean))
 # Lists (arrays)
 listOne = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 listTwo = listOne[1:6]
-print(listTwo[2])
+print("listTwo:", listTwo[2])
 
 listTwo.append(myInt)
 listTwo.insert(0, listOne[5])
-print(listTwo)
+print("listTwo after additions:", listTwo)
 
 listOne.pop()
 del listOne[3]
+print("listOne after removals:", listOne)
+
 listTwo.sort()
 listTwo.reverse()
-print(listTwo)
+print("listTwo sorted and reversed:", listTwo)
 
 listThree = listOne + listTwo
-print(len(listThree))
+print("listThree length:", len(listThree))
 
 listFour = [1] * 9
-print(listTwo + listFour)
+print("listTwo + listFour:", listTwo + listFour)
 
 # If statements
 if(myInt > 20):

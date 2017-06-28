@@ -3,16 +3,12 @@
 import math
 
 def palindromes(string):
-    f_pos = 0
-    l_pos = -1
+    f_pos, l_pos, count = 0, -1, 0
 
-    count = 0
     # Compare all letters except the one in the middle
     for x in range(len(string) // 2):
         if(string[f_pos] == string[l_pos]):
             count += 1
-        else:
-            pass
 
         f_pos += 1
         l_pos -= 1

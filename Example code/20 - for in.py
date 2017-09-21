@@ -2,7 +2,7 @@ days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sun
 
 # Print each value in the array in order
 for day in days:
-    print("\nDay:", day)
+    print("\nDay: {}".format(day))
 
     # We can also iterate through strings
     for letter in day:
